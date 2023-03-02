@@ -17,6 +17,7 @@ def main():
 
 		except RuntimeError as error:
 			print(error.args[0])
+			print(error)
 			time.sleep(10)
 			continue
 
@@ -30,7 +31,7 @@ def main():
 			break
 
 		finally:
-			time.sleep(10)
+			time.sleep(2)
 
 
 if __name__ == '__main__':
